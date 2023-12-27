@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+  .bars__menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .logo {
+    order: -1;
+  }
+  
+  .bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #9A00BF;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+  }
+  
+  .activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+  }
+  
+  .activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+  }
+  
+  .activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+  }
+}
