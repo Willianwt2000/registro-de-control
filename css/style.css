@@ -52,7 +52,7 @@ h1{
   text-align: center;
   margin-top: 20px;
   font-size: 2.5rem;
-  color: rgb(141, 5, 28);
+  color: rgb(8, 160, 8);
   font-weight: bold;
 }
 
@@ -71,20 +71,22 @@ h1{
   margin-top: 20px;
 }
 
-.nombre{
+.nombre, .pago{
+  margin-top: 7px;
   width: 20rem;
   padding: 10px;
   font-size: 20px;
-}
-.pago{
-  width: 5rem;
-  padding: 10px;
-  font-size: 20px;
   font-weight: 700px;
+  border-radius: 13px;
+  outline: none;
+  border: 2px solid #137217;
 }
 
+
 .agregar {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -93,7 +95,7 @@ h1{
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  color: #fff; /* Texto blanco */
+  color: #fff; 
   background-color: #137217;
   user-select: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
@@ -142,7 +144,6 @@ th {
 }
 
 
-/* ... Tus estilos existentes ... */
 
 .menu-toggle {
   display: none;
@@ -157,60 +158,10 @@ th {
   background-color: #fff;
 }
 
-/* @media screen and (max-width: 768px) {
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  th, td {
-    font-size: 17px;
-    font-weight: 500;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .registrarPagoImput{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .nombre{
-    width: 100%;
-  }
-
-  label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-  }
-
-  nav.show {
-    display: flex;
-  }
-
-  nav a {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #555;
-  }
-} */
 
 
 
 
-/* ... Tus estilos existentes ... */
 
 /* Estilos para tamaños de pantalla pequeños (teléfonos) */
 @media only screen and (max-width: 768px) {
@@ -230,7 +181,7 @@ th {
 
   .nombre,
   .pago {
-    width: 90vw; /* Ancho completo en pantallas pequeñas */
+    width: 90vw; 
     box-sizing: border-box;
     margin-right: 0;
   }
@@ -241,14 +192,17 @@ th {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-size: 16px; /* Ajuste del tamaño de la fuente */
+    font-size: 16px;
   }
 
   .agregar {
-    width: 70%; /* Ancho completo en pantallas pequeñas */
-    margin-top: 10px; /* Ajuste del margen superior */
+    width: 70%; 
+    margin-top: 10px; 
   }
 
+  .agregar {
+    background-color: rgb(231, 64, 92);
+  }
   nav {
     display: none;
     flex-direction: column;
@@ -270,4 +224,3 @@ th {
   }
 }
 
-/* ... Otros estilos específicos para tabletas y pantallas grandes ... */
